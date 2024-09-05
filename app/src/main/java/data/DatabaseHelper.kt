@@ -25,4 +25,14 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {     // Create a new version
     }
+
+    fun insertUser(username: String,
+                   password: String,
+                   firstName: String,
+                   lastName: String,
+                   email: String,
+                   phone: String) {
+        val db = this.writableDatabase
+        db.insert
+    }
 }

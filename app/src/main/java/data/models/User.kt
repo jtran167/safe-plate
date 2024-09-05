@@ -33,4 +33,14 @@ object User {
             Log.i("info", ex.message ?: "Error creating table")
         }
     }
+
+    fun insertUser(username: String,
+                   password: String,
+                   firstName: String,
+                   lastName: String,
+                   email: String,
+                   phone: String) {
+        val db = this.db
+        db.insert
+    }
 }
