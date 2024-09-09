@@ -1,14 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="277dp"
+        android:text="Food Diary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/editTextText9"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="126dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="Safe Plate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#2196F3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/accountButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/accountButton"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="3dp"
+        android:background="@null"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextText9"
+        app:layout_constraintTop_toTopOf="@+id/editTextText9"
+        app:srcCompat="@drawable/u" />
+
+    <ImageButton
+        android:id="@+id/imageButton25"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/map" />
+
+    <TextView
+        android:id="@+id/factsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="283dp"
+        android:text="Facts"
+        app:layout_constraintEnd_toEndOf="@+id/factsButton"
+        app:layout_constraintStart_toStartOf="@+id/factsButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/treatmentButton"
+        android:layout_width="0dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="1dp"
+        android:background="@null"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/factsTextView"
+        app:layout_constraintEnd_toStartOf="@+id/adviceButton"
+        app:layout_constraintStart_toEndOf="@+id/factsButton"
+        app:srcCompat="@drawable/treatment" />
+
+    <TextView
+        android:id="@+id/treatmentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:text="Treatment"
+        app:layout_constraintStart_toStartOf="@+id/treatmentButton"
+        app:layout_constraintTop_toBottomOf="@+id/treatmentButton" />
+
+    <TextView
+        android:id="@+id/adviceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="38dp"
+        android:text="Advice"
+        app:layout_constraintEnd_toEndOf="@+id/adviceButton"
+        app:layout_constraintTop_toBottomOf="@+id/adviceButton" />
+
+    <ImageButton
+        android:id="@+id/adviceButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@null"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/treatmentButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/treatmentButton"
+        app:layout_constraintTop_toTopOf="@+id/treatmentButton"
+        app:srcCompat="@drawable/advice" />
+
+    <ImageButton
+        android:id="@+id/factsButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="2dp"
+        android:background="@null"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/factsTextView"
+        app:layout_constraintEnd_toStartOf="@+id/treatmentButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/treatmentButton"
+        app:srcCompat="@drawable/facts" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="0dp"
+        android:layout_height="107dp"
+        android:text="A food diary can help identify unfavorable foods by listing them daily and observing symptoms. If a food triggers symptoms, remove it for a few weeks, then reintroduce it. If symptoms disappear with the subtraction but return with the addition, the culprit is identified."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="187dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView40">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="454dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/foodDiaryRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="454dp" />
+        </TableRow>
+
+    </TableLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

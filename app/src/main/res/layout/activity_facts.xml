@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".facts">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="25dp"
+            android:text="Over 100 million people in the U.S. experience allergies annually, with medicines, food, and insect stings being the most common triggers. Older adults in the U.S. have the highest rates of allergy-related deaths."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="4dp"
+            android:text="Facts & Understanding"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/homeButton_facts"
+            app:layout_constraintEnd_toStartOf="@+id/accountButton_facts"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/accountButton_facts"
+            android:layout_width="0dp"
+            android:layout_height="118dp"
+            android:background="@null"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView26"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/u" />
+
+        <ImageButton
+            android:id="@+id/homeButton_facts"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="50dp"
+            android:background="@null"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/accountButton_facts"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home" />
+
+        <TextView
+            android:id="@+id/editTextText3"
+            android:layout_width="145dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="text"
+            android:text="Safe Plate"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="25dp"
+            android:text="What is an allergy?"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeButton_facts" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="17dp"
+            android:text="What are the effects of an allergy? "
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView33"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="13dp"
+            android:text="There is no cure for allergies, but proper education, prevention, and medical treatment can help manage them."
+            app:layout_constraintBottom_toTopOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="Is this disease a lifetime?"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/textView33"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="0dp"
+            android:layout_height="168dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="249dp"
+            android:text="Causing specific symptoms such as coughing, sneezing, hives, rashes, itchy eyes, a cunny nose, swelling and scratchy throat. Often in severe cases, it can lead to low blood pressure, breathing trouble, asthma attacks, and even death if not treated promptly."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeButton_facts" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="30dp"
+            android:text="An allergy is a reaction to a foreign substance such as food, inhalation, injection, or touch"
+            app:layout_constraintBottom_toTopOf="@+id/textView32"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="@+id/textView30"
+            app:layout_constraintTop_toTopOf="@+id/textView30" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="6dp"
+            android:text="Big idea to think about! "
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintStart_toEndOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="112dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="0dp"
+            android:layout_height="324dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/homeButton_facts"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/food" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="260dp"
+            android:layout_height="341dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView36"
+            app:layout_constraintStart_toStartOf="@+id/textView37"
+            app:srcCompat="@drawable/symtoms" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -93,14 +93,14 @@ public class User implements IUser {
                 com.safeplate.data.models.User.firstNameColumn + ", " +
                 com.safeplate.data.models.User.lastNameColumn + ", " +
                 com.safeplate.data.models.User.emailColumn + ", " +
-                com.safeplate.data.models.User.phoneColumn + ", " +
-                "values (" +
+                com.safeplate.data.models.User.phoneColumn + ")" +
+                " values (" +
                 "'" + username + "', " +
                 "'" + passwordHashcode + "', " +
                 "'" + firstName + "', " +
                 "'" + lastName + "', " +
                 "'" + email + "', " +
-                "'" + phone + "'');";
+                "'" + phone + "');";
         try {
             DataSingleton.instance.getDB().execSQL(query);
         } catch (SQLiteConstraintException ex) {
