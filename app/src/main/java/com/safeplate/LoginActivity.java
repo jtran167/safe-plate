@@ -23,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        String apiKey = BuildConfig.MAPS_API_KEY;
         DataManager dataManager = new DataManager(this);
         DataSingleton.SetInstance(dataManager);
 

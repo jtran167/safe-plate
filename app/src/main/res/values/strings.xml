@@ -21,4 +21,5 @@
     <string name="close_label">Close</string>
     <string name="match_success_message">Congratulations! You have matched with this puppy! Someone from the agency will contact you directly with details for your adoption.</string>
     <string name="back_to_home_label">Back to Home</string>
+    <string name="maps_api_key">your_api_key_here</string>
 </resources>
