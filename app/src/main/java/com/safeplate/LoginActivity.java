@@ -13,6 +13,7 @@ import com.safeplate.data.DataManager;
 import com.safeplate.data.DataSingleton;
 import com.safeplate.data.Interactor;
 import com.safeplate.MainActivity;
+import com.google.android.libraries.places.api.Places;
 
 public class LoginActivity extends AppCompatActivity {
     private TextView loginErrorMessage;
@@ -24,6 +25,9 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         String apiKey = BuildConfig.MAPS_API_KEY;
+        if (!Places.isInitialized()) {
+            Places.initialize(getApplicationContext(), BuildConfig.MAPS_API_KEY);
+        }
         DataManager dataManager = new DataManager(this);
         DataSingleton.SetInstance(dataManager);
 
