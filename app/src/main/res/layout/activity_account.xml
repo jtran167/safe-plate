@@ -30,7 +30,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/aboutUsButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="6dp"
@@ -76,7 +76,7 @@
         android:padding="0dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/listOfAllergies"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintEnd_toStartOf="@+id/aboutUsButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home" />
@@ -114,7 +114,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/addNewAllergyEditText"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+        app:layout_constraintTop_toBottomOf="@+id/aboutUsButton" />
 
     <TextView
         android:id="@+id/userNameTextView"

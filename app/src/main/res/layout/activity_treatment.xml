@@ -7,85 +7,97 @@
     android:layout_height="match_parent"
     tools:context=".treatment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="230dp"
+        android:text="Treatment"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountButton_treatment" />
+
+    <ImageButton
+        android:id="@+id/accountButton_treatment"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@null"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextText7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/u" />
+
+    <EditText
+        android:id="@+id/editTextText7"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="23dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="text"
+        android:text="Safe Plate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#2196F3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/accountButton_treatment"
+        app:layout_constraintStart_toEndOf="@+id/homeButton_treatment"
+        app:layout_constraintTop_toTopOf="@+id/homeButton_treatment" />
+
+    <ImageButton
+        android:id="@+id/homeButton_treatment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintEnd_toStartOf="@+id/editTextText7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="36dp"
+        android:text="To manage mild allergic symptoms, especially those with a history of drug allergies, use over-the-counter medication, ask the Pharmacist for more information. Always check labels for medications targeting drug allergies without side effects and implement safety precautions. Anaphylaxis is a severe allergic reaction that requires immediate emergency care, and epinephrine can be used to treat it. If administered, contact emergency services immediately. If severe drug allergies are the issue, medical professionals may conduct a drug challenge to identify the specific cause and consider drug desensitization therapy."
+        app:layout_constraintBottom_toTopOf="@+id/textView28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeButton_treatment" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="221dp"
+        android:text="Home remedies and proper skin care can alleviate skin irritations caused by drug allergens. Cool compresses, oatmeal baths, and aloe vera gel can help calm itchy skin. Topical steroids can be used under medical supervision to control rash, but should be used under medical supervision. For ongoing management, choose fragrance-free soaps and lotions, incorporate hypoallergenic products daily, and wear protective clothing. Consult a healthcare provider about skincare routines and skin testing."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Treatment"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="76dp" />
-
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="124dp"
-            android:layout_height="118dp"
-            android:layout_margin="0dp"
-            android:background="@null"
-            android:padding="0dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/u"
-            tools:layout_editor_absoluteX="301dp"
-            tools:layout_editor_absoluteY="0dp" />
-
-        <EditText
-            android:id="@+id/editTextText7"
-            android:layout_width="145dp"
-            android:layout_height="53dp"
-            android:ems="10"
-            android:fontFamily="monospace"
-            android:inputType="text"
-            android:text="Safe Plate"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#2196F3"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="133dp"
-            tools:layout_editor_absoluteY="0dp" />
-
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="124dp"
-            android:layout_height="118dp"
-            android:layout_margin="0dp"
-            android:background="@null"
-            android:padding="0dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/home"
-            tools:layout_editor_absoluteX="-17dp"
-            tools:layout_editor_absoluteY="0dp" />
-
-        <TextView
-            android:id="@+id/textView24"
-            android:layout_width="386dp"
-            android:layout_height="186dp"
-            android:text="To manage mild allergic symptoms, especially those with a history of drug allergies, use over-the-counter medication, ask the Pharmacist for more information. Always check labels for medications targeting drug allergies without side effects and implement safety precautions. Anaphylaxis is a severe allergic reaction that requires immediate emergency care, and epinephrine can be used to treat it. If administered, contact emergency services immediately. If severe drug allergies are the issue, medical professionals may conduct a drug challenge to identify the specific cause and consider drug desensitization therapy."
-            tools:layout_editor_absoluteX="13dp"
-            tools:layout_editor_absoluteY="121dp" />
-
-        <TextView
-            android:id="@+id/textView28"
-            android:layout_width="385dp"
-            android:layout_height="152dp"
-            android:text="Home remedies and proper skin care can alleviate skin irritations caused by drug allergens. Cool compresses, oatmeal baths, and aloe vera gel can help calm itchy skin. Topical steroids can be used under medical supervision to control rash, but should be used under medical supervision. For ongoing management, choose fragrance-free soaps and lotions, incorporate hypoallergenic products daily, and wear protective clothing. Consult a healthcare provider about skincare routines and skin testing."
-            tools:layout_editor_absoluteX="10dp"
-            tools:layout_editor_absoluteY="343dp" />
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="382dp"
-            android:layout_height="171dp"
-            android:text="Breathing techniques like pursed-lip and diaphragmatic breathing can improve comfort and lung function in individuals with respiratory symptoms. Consistent practice is crucial for managing breathing difficulties. Inhalers, including anti-inflammatory drugs, can treat aggravated symptoms by dispersing medication through vigorous shaking, full exhalation, and holding breath for 10 seconds. Consult a healthcare provider before making changes to your regimen. Be vigilant for signs of worsening symptoms, as quick response is crucial for lung health."
-            tools:layout_editor_absoluteX="9dp"
-            tools:layout_editor_absoluteY="536dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="20dp"
+        android:text="Breathing techniques like pursed-lip and diaphragmatic breathing can improve comfort and lung function in individuals with respiratory symptoms. Consistent practice is crucial for managing breathing difficulties. Inhalers, including anti-inflammatory drugs, can treat aggravated symptoms by dispersing medication through vigorous shaking, full exhalation, and holding breath for 10 seconds. Consult a healthcare provider before making changes to your regimen. Be vigilant for signs of worsening symptoms, as quick response is crucial for lung health."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

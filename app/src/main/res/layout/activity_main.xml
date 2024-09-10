@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteX="1dp"
     tools:layout_editor_absoluteY="0dp">
 
     <TextView
         android:id="@+id/textView40"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="277dp"
+        android:layout_marginBottom="368dp"
         android:text="Food Diary"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,8 +22,9 @@
     <TextView
         android:id="@+id/editTextText9"
         android:layout_width="0dp"
-        android:layout_height="124dp"
+        android:layout_height="0dp"
         android:layout_marginStart="126dp"
+        android:layout_marginBottom="434dp"
         android:ems="10"
         android:fontFamily="monospace"
         android:gravity="center"
@@ -32,6 +33,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#2196F3"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/addNewFoodDiaryNameEditText"
         app:layout_constraintEnd_toStartOf="@+id/accountButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -59,17 +61,20 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/map" />
 
     <TextView
         android:id="@+id/factsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="283dp"
+        android:layout_marginTop="280dp"
         android:text="Facts"
         app:layout_constraintEnd_toEndOf="@+id/factsButton"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="@+id/factsButton"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -90,7 +95,7 @@
         android:id="@+id/treatmentTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
+        android:layout_marginStart="36dp"
         android:text="Treatment"
         app:layout_constraintStart_toStartOf="@+id/treatmentButton"
         app:layout_constraintTop_toBottomOf="@+id/treatmentButton" />
@@ -99,25 +104,25 @@
         android:id="@+id/adviceTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="56dp"
         android:text="Advice"
         app:layout_constraintEnd_toEndOf="@+id/adviceButton"
         app:layout_constraintTop_toBottomOf="@+id/adviceButton" />
 
     <ImageButton
         android:id="@+id/adviceButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="1dp"
+        android:layout_width="156dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginBottom="276dp"
         android:background="@null"
         android:padding="0dp"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/treatmentButton"
+        app:layout_constraintBottom_toTopOf="@+id/addNewFoodDiaryButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/treatmentButton"
-        app:layout_constraintTop_toTopOf="@+id/treatmentButton"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/advice" />
 
     <ImageButton
@@ -132,37 +137,78 @@
         app:layout_constraintEnd_toStartOf="@+id/treatmentButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/treatmentButton"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/facts" />
 
     <TextView
         android:id="@+id/textView41"
         android:layout_width="0dp"
         android:layout_height="107dp"
+        android:layout_marginBottom="16dp"
         android:text="A food diary can help identify unfavorable foods by listing them daily and observing symptoms. If a food triggers symptoms, remove it for a few weeks, then reintroduce it. If symptoms disappear with the subtraction but return with the addition, the culprit is identified."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/addNewFoodDiaryNameEditText"
+        android:layout_width="129dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="123dp"
+        android:hint="Add new food diary"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/foodDiaryExperienceSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText9" />
+
+    <Spinner
+        android:id="@+id/foodDiaryExperienceSpinner"
+        android:layout_width="134dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView41"
+        app:layout_constraintEnd_toStartOf="@+id/addNewFoodDiaryButton"
+        app:layout_constraintStart_toEndOf="@+id/addNewFoodDiaryNameEditText"
+        app:layout_constraintTop_toTopOf="@+id/addNewFoodDiaryButton" />
+
+    <Button
+        android:id="@+id/addNewFoodDiaryButton"
+        android:layout_width="127dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="123dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Add"
+        app:iconTint="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/foodDiaryExperienceSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/adviceButton" />
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="0dp"
-        android:layout_height="187dp"
+        android:layout_width="408dp"
+        android:layout_height="243dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView40">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="454dp">
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="363dp">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/foodDiaryRecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="454dp" />
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="363dp" />
         </TableRow>
 
     </TableLayout>

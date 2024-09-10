@@ -28,6 +28,7 @@ public class AccountActivity extends AppCompatActivity {
     private TextView emailTextView;
     private TextView userFullNameTextView;
     private ImageButton homeButton;
+    private ImageButton aboutUsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,7 @@ public class AccountActivity extends AppCompatActivity {
         this.emailTextView = findViewById(R.id.emailTextView);
         this.userFullNameTextView = findViewById(R.id.userFullNameTextView);
         this.homeButton = findViewById(R.id.homeButton);
+        this.aboutUsButton = findViewById(R.id.aboutUsButton);
 
         User loggedInUser = LoggedInUser.getInstance();
         this.usernameTextView.setText(loggedInUser.getUserName());
@@ -60,6 +62,10 @@ public class AccountActivity extends AppCompatActivity {
 
         this.addAllergyButton.setOnClickListener(v -> {
             this.addAllergy();
+        });
+
+        this.aboutUsButton.setOnClickListener(view -> {
+            this.goToAboutUsActivity();
         });
 
         this.homeButton.setOnClickListener(view -> {
@@ -92,6 +98,12 @@ public class AccountActivity extends AppCompatActivity {
 
     private void GoToMainActivity() {
         Intent myIntent = new Intent(AccountActivity.this, MainActivity.class);
+        myIntent.putExtra("", "");
+        AccountActivity.this.startActivity(myIntent);
+    }
+
+    private void goToAboutUsActivity() {
+        Intent myIntent = new Intent(AccountActivity.this, InfoActivity.class);
         myIntent.putExtra("", "");
         AccountActivity.this.startActivity(myIntent);
     }

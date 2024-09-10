@@ -19,9 +19,9 @@
         android:id="@+id/remove_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#03A9F4"
+        android:backgroundTint="#E677AE"
         android:backgroundTintMode="add"
         android:text="Remove"
-        android:textColor="@android:color/black" />
+        android:textColor="@color/white" />
 
 </LinearLayout>

@@ -17,8 +17,8 @@ public class FoodDiary implements IFoodDiary {
                 com.safeplate.data.models.FoodDiary.experienceColumn + ", " +
                 com.safeplate.data.models.FoodDiary.timeStampColumn + ") values (" +
                 foodDiary.getUserId() + ", " +
-                "'" + foodDiary.getFood() + "'" +
-                "'" + foodDiary.getExperience() + "'" +
+                "'" + foodDiary.getFood() + "'," +
+                "'" + foodDiary.getExperience() + "'," +
                 "'" + foodDiary.getTimeStamp() + "'" + ");";
         try {
             DataSingleton.instance.getDB().execSQL(query);
@@ -33,9 +33,9 @@ public class FoodDiary implements IFoodDiary {
     public ArrayList<com.safeplate.data.models.FoodDiary> getFoodDiariesByUserId(int userId) {
         Cursor cursor = null;
         String query = "select *" +
-                "from food_diaries" +
-                "where userId = " + userId;
-        ArrayList<com.safeplate.data.models.FoodDiary> response = null;
+                " from food_diaries" +
+                " where userId = " + userId;
+        ArrayList<com.safeplate.data.models.FoodDiary> response = new ArrayList<>();
         try {
             cursor = DataSingleton.instance.getDB().rawQuery(query, null);
             while (cursor.moveToNext()) {

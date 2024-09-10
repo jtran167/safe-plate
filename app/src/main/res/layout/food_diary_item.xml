@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/foodDiary_foodName"
-        android:layout_width="191dp"
-        android:layout_height="47dp"
+        android:layout_width="78dp"
+        android:layout_height="34dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_weight="1"
@@ -17,16 +17,26 @@
 
     <TextView
         android:id="@+id/foodDiary_experience"
-        android:layout_width="wrap_content"
+        android:layout_width="75dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="3dp"
         android:layout_weight="1"
         android:text="Good" />
 
     <TextView
         android:id="@+id/foodDiary_date"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="11/22/24" />
+
+    <Button
+        android:id="@+id/removeFoodDiaryButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#E677AE"
+        android:text="Remove" />
 
 </LinearLayout>
