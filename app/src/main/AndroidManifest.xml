@@ -23,7 +23,7 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/maps_api_key" />
-        <activity android:name=".CreateAccountActivity" android:exported="true"/>
+        <activity android:name=".CreateAccountActivity" />
         <activity
             android:name=".LoginActivity"
             android:exported="true"
