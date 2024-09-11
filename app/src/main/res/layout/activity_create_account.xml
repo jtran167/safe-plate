@@ -170,9 +170,10 @@
 
             <Button
                 android:id="@+id/createAccountButtonCreate"
-                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#03A9F4"
                 android:text="@string/create_account_label" />
         </TableRow>
     </TableLayout>

@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class AdviceActivity extends AppCompatActivity {
     private ImageButton homeButton;
     private ImageButton accountButton;
+    private ImageButton mapButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,10 @@ public class AdviceActivity extends AppCompatActivity {
             this.GoToAccountActivity();
         });
 
+        this.mapButton = findViewById(R.id.mapButton_advice);
+        this.mapButton.setOnClickListener(view -> {
+            this.goToMapActivity();
+        });
     }
 
     private void GoToMainActivity() {
@@ -35,6 +40,12 @@ public class AdviceActivity extends AppCompatActivity {
 
     private void GoToAccountActivity() {
         Intent myIntent = new Intent(AdviceActivity.this, AccountActivity.class);
+        myIntent.putExtra("", "");
+        AdviceActivity.this.startActivity(myIntent);
+    }
+
+    private void goToMapActivity() {
+        Intent myIntent = new Intent(AdviceActivity.this, MapActivity.class);
         myIntent.putExtra("", "");
         AdviceActivity.this.startActivity(myIntent);
     }

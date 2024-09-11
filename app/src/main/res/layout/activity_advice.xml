@@ -96,7 +96,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
-            android:id="@+id/imageButton18"
+            android:id="@+id/mapButton_advice"
             android:layout_width="0dp"
             android:layout_height="118dp"
             android:layout_marginTop="381dp"

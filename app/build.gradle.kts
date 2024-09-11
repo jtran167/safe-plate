@@ -49,9 +49,10 @@ dependencies {
 
     implementation(libs.appcompat)
     implementation(libs.material)
+    implementation(libs.play.services.location)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation("com.google.android.gms:play-services-maps:18.1.0")
-    implementation("com.google.android.libraries.places:places:2.7.0")
+    implementation("com.google.android.gms:play-services-places:17.0.0")
 }
