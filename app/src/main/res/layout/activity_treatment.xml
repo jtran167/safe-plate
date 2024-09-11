@@ -93,8 +93,8 @@
 
     <TextView
         android:id="@+id/textView28"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="397dp"
+        android:layout_height="155dp"
         android:layout_marginStart="7dp"
         android:layout_marginEnd="7dp"
         android:text="Home remedies and proper skin care can alleviate skin irritations caused by drug allergens. Cool compresses, oatmeal baths, and aloe vera gel can help calm itchy skin. Topical steroids can be used under medical supervision to control rash, but should be used under medical supervision. For ongoing management, choose fragrance-free soaps and lotions, incorporate hypoallergenic products daily, and wear protective clothing. Consult a healthcare provider about skincare routines and skin testing."

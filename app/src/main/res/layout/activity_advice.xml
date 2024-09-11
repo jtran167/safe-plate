@@ -22,8 +22,8 @@
 
         <TextView
             android:id="@+id/editTextText2"
-            android:layout_width="149dp"
-            android:layout_height="60dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="38dp"
             android:ems="10"
@@ -34,9 +34,10 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#2196F3"
             android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView26"
             app:layout_constraintEnd_toStartOf="@+id/accountButton_advice"
             app:layout_constraintStart_toEndOf="@+id/homeButton_advice"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/homeButton_advice" />
 
         <ImageButton
             android:id="@+id/accountButton_advice"
@@ -46,7 +47,7 @@
             android:padding="0dp"
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageButton17"
+            app:layout_constraintStart_toEndOf="@+id/textView26"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/u" />
 
@@ -55,182 +56,195 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="76dp"
+            android:layout_marginEnd="214dp"
+            android:layout_marginBottom="10dp"
             android:text="Advice"
             android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toBottomOf="@+id/homeButton_advice"
+            app:layout_constraintEnd_toStartOf="@+id/accountButton_advice"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView25"
             android:layout_width="0dp"
             android:layout_height="38dp"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="633dp"
-            android:layout_marginEnd="26dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="60dp"
             android:text="- Avoid eating at that location or booking there if the staff don’t understand your dietary needs.  "
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/textView22" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
-            android:layout_marginTop="139dp"
+            android:layout_marginBottom="14dp"
             android:text="Cooking"
             android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
-            android:layout_marginTop="409dp"
+            android:layout_marginTop="26dp"
             android:text="Eating out"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
         <ImageButton
             android:id="@+id/mapButton_advice"
-            android:layout_width="0dp"
+            android:layout_width="110dp"
             android:layout_height="118dp"
-            android:layout_marginTop="381dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="37dp"
             android:background="@null"
             android:padding="0dp"
             android:scaleType="centerCrop"
-            app:layout_constraintEnd_toEndOf="@+id/imageButton17"
-            app:layout_constraintStart_toStartOf="@+id/imageButton17"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/textView19"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toTopOf="@+id/textView16"
             app:srcCompat="@drawable/map" />
-
-        <ImageButton
-            android:id="@+id/imageButton17"
-            android:layout_width="0dp"
-            android:layout_height="118dp"
-            android:layout_marginStart="76dp"
-            android:layout_marginTop="113dp"
-            android:layout_marginEnd="116dp"
-            android:background="@null"
-            android:padding="0dp"
-            android:scaleType="centerCrop"
-            app:layout_constraintEnd_toStartOf="@+id/accountButton_advice"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/scanner" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="177dp"
-            android:layout_marginEnd="5dp"
             android:text="Food Preparation Guidelines"
-            app:layout_constraintEnd_toEndOf="@+id/imageButton17"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="0dp"
             android:layout_height="38dp"
-            android:layout_marginTop="246dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="38dp"
             android:text="- Before you start preparing food, clean all surfaces and cooking equipment with hot and soapy water in order to get rid of any traces from previous meals that you might have cooked before."
-            app:layout_constraintEnd_toEndOf="@+id/textView14"
-            app:layout_constraintStart_toStartOf="@+id/textView14"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toBottomOf="@+id/textView14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView12" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="0dp"
             android:layout_height="38dp"
-            android:layout_marginTop="208dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="99dp"
             android:text="- Ask guest about food allergies or recognize what they can and cannot eat"
-            app:layout_constraintEnd_toEndOf="@+id/textView13"
-            app:layout_constraintStart_toStartOf="@+id/textView13"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toBottomOf="@+id/textView15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
         <TextView
             android:id="@+id/textView18"
             android:layout_width="0dp"
             android:layout_height="38dp"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="476dp"
-            android:layout_marginEnd="26dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="60dp"
             android:text="- Check restaurant’s food allergy and intolerance policies online or call using their given phone number "
+            app:layout_constraintBottom_toBottomOf="@+id/textView21"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/textView7" />
 
         <TextView
             android:id="@+id/textView21"
             android:layout_width="0dp"
             android:layout_height="38dp"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="536dp"
-            android:layout_marginEnd="26dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="127dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="127dp"
             android:text="- Provide allergen information to the cook or seek someone from the staff to have a better understanding of your needs "
+            app:layout_constraintBottom_toTopOf="@+id/textView27"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/textView7" />
 
         <TextView
             android:id="@+id/textView23"
             android:layout_width="0dp"
             android:layout_height="38dp"
-            android:layout_marginTop="595dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="98dp"
             android:text="- Be cautious when ordering complex dishes due to potential hidden allergens. "
-            app:layout_constraintEnd_toEndOf="@+id/textView25"
-            app:layout_constraintStart_toStartOf="@+id/textView22"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mapButton_advice" />
 
         <TextView
             android:id="@+id/textView19"
             android:layout_width="0dp"
             android:layout_height="22dp"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="514dp"
+            android:layout_marginTop="38dp"
             android:layout_marginEnd="30dp"
+            android:layout_marginBottom="38dp"
             android:text="- Confirm menu availability or special meal creation"
+            app:layout_constraintBottom_toBottomOf="@+id/textView21"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/textView18" />
 
         <TextView
             android:id="@+id/textView17"
             android:layout_width="0dp"
             android:layout_height="19dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="445dp"
-            android:layout_marginEnd="18dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="12dp"
             android:text="Safe Dining Experience for people with food allergies"
-            app:layout_constraintEnd_toEndOf="@+id/textView22"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toTopOf="@+id/textView18"
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <TextView
             android:id="@+id/textView14"
             android:layout_width="0dp"
             android:layout_height="38dp"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="284dp"
-            android:layout_marginEnd="26dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="87dp"
             android:text="- Keep allergens separate from other foods to avoid cross-contact in the kitchen "
+            app:layout_constraintBottom_toTopOf="@+id/textView7"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="0dp"
             android:layout_height="38dp"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="345dp"
-            android:layout_marginEnd="26dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
             android:text="- Avoid eating at that location or booking there if the staff don’t understand your dietary needs.  "
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -240,34 +254,37 @@
             android:layout_width="0dp"
             android:layout_height="23dp"
             android:layout_marginStart="27dp"
-            android:layout_marginTop="322dp"
+            android:layout_marginTop="38dp"
             android:layout_marginEnd="27dp"
+            android:layout_marginBottom="38dp"
             android:text="- Double check pre packed food for allergens "
+            app:layout_constraintBottom_toBottomOf="@+id/textView16"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/textView14" />
 
         <TextView
             android:id="@+id/textView22"
             android:layout_width="0dp"
             android:layout_height="21dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="574dp"
+            android:layout_marginTop="38dp"
             android:layout_marginEnd="24dp"
+            android:layout_marginBottom="38dp"
             android:text="- Check food handling and cooking for accuracy "
+            app:layout_constraintBottom_toBottomOf="@+id/textView23"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/textView21" />
 
         <ImageButton
             android:id="@+id/homeButton_advice"
             android:layout_width="0dp"
-            android:layout_height="118dp"
-            android:layout_margin="0dp"
-            android:layout_marginEnd="28dp"
+            android:layout_height="0dp"
             android:background="@null"
             android:padding="0dp"
             android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/accountButton_advice"
             app:layout_constraintEnd_toStartOf="@+id/editTextText2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -278,9 +295,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
-            android:layout_marginTop="695dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/btn_star_big_on" />
 
         <TextView
@@ -288,10 +305,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="701dp"
+            android:layout_marginBottom="11dp"
             android:text="These shortcuts on the sides will help you "
-            app:layout_constraintStart_toEndOf="@+id/imageView3"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView3" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
